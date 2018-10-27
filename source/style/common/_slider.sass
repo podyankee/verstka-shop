@@ -1,0 +1,58 @@
+.slider
+	background: linear-gradient(90deg, #cdced2, #c5c6ca)
+.slider__item
+	+row-flex
+	align-items: center
+	padding: 0 60px
+.slider__img, .slider__info
+	+col
+	+size(6)
+.slider__img
+	align-self: flex-end
+	img
+		display: block
+		max-width: 100%
+.slider__info
+	p
+		+rem(14px)
+		line-height: 26px
+		color: $slider-text
+		margin: 25px 0
+p.slider__title
+	+rem(86px)
+	line-height: 107px
+	font-weight: 600
+	color: $black
+	letter-spacing: 2.32px
+	text-transform: uppercase
+.slider__type
+	+rem(18px)
+	line-height: 25
+	font-weight: 600
+	color: $black
+	span
+		font-size: 14px
+		letter-spacing: 1.12px
+		font-weight: 300
+		margin-left: 25px
+.slider__icons
+	display: flex
+	flex-wrap:wrap
+	flex-wrap: wrap
+	margin: 25px 0
+	a
+		+square(37px)
+		border: 1px solid $black
+		border-radius: 50%
+		margin-right: 20px
+		position: relative
+		&:last-child
+			margin-right: 0
+		.icon-arrow-right
+			fill: $white
+		&:first-of-type
+			background-color: $black
+	.icon
+		+absolute-center
+.slider__btn
+	+btn()
