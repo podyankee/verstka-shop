@@ -1,0 +1,89 @@
+html
+	font-size: 16px
+	
+	body
+		font-family: $default-font
+		font-size: 16px
+
+
+h1, h2, h3, h4, h5, h6
+	margin: 0
+
+ul, li
+	list-style-type: none
+	margin: 0
+	padding: 0
+a
+	text-decoration: none
+
+p
+	margin: 0
+	color: $black
+
+input, select, button
+	outline: none
+
+*, *:before, *:after
+	box-sizing: border-box
+
+.container
+	+wrapper
+	
+
+.btn
+	height: 40px
+	border: 1px solid $black
+	border-radius: 4px
+	color: $black
+	line-height: 38px
+	font-weight: 600
+	background-color: $white
+	padding: 0 20px
+	display: block
+	text-align: center
+	transition: all linear 0.3s
+	cursor: pointer
+	width: 100%
+	&:hover
+		background-color: $black
+		color: #fff
+	&.btn--border-white
+		border: 1px solid $white
+	&.btn--transparent
+		&--white
+			background-color: transparent
+			color: $white
+			&:hover
+				background-color: $white
+				color: $black
+		&-gray
+			border-color: rgba(38,38,38,9.15)
+			background-color: transparent
+			color: $black
+			&:hover
+				background-color: rgba(38,38,38,9.15)
+				color: $white
+	&.btn--round
+		border-radius: 20px
+	&.btn--inline
+		display: inline-block
+		width: auto
+	&.btn--small
+		height: 30px
+		padding: 0 15px
+		line-height: 28px
+	&.btn--bg-orange
+		background: $black
+		color: #fff
+		&:hover
+			background: #fff
+			color: $black
+			border: 2px solid $black
+	&.btn--contour-gray
+		border: 2px solid $black
+		color: $black
+
+.wrap
+	+min-max(320px, 1200px, 15px)
+.icon
+	+square(15px)

@@ -1,0 +1,22 @@
+include _mixins
+
+.top
+	.top__wrap
+		.top__left.logo
+			a(href="#")
+				img(src="assets/img/logo.png", alt="Shop logo")
+		.top__menu.menu
+			ul.header-nav__list
+				+headerNavLink("index.html", 'Home')
+				+headerNavLink("#", 'Shop')
+				+headerNavLink("#", 'Women')
+				+headerNavLink("#", 'Men')
+				+headerNavLink("#", 'Find stores')
+		.top__right.icons
+			.icons__cart
+				a(href="#")
+					+icon('cart')
+			.icons__search
+				+icon('search', 'icons__img')
+
+
