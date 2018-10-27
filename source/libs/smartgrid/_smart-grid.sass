@@ -1,6 +1,7 @@
 $columns: 12
 $atom: (100% / $columns)
 
+$break_xl: 1300px
 $break_lg: 1200px
 $break_md: 768px
 $break_sm: 560px
@@ -224,6 +225,9 @@ $fields_sm: 15px
     @media screen and (max-width: $break_lg)
         #{$name}: $value
 
+=xl-block()
+    @media screen and (max-width: $break_xl)
+        @content
 =lg-block()
     @media screen and (max-width: $break_lg)
         @content

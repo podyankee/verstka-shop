@@ -1,5 +1,6 @@
 .slider
 	background: linear-gradient(90deg, #cdced2, #c5c6ca)
+	position: relative
 .slider__item
 	+row-flex
 	align-items: center
@@ -56,3 +57,28 @@ p.slider__title
 		+absolute-center
 .slider__btn
 	+btn()
+.js-slider
+	max-width: 1920px
+.slider__navigation
+	+square(50px)
+	display: flex
+	align-items: center
+	justify-content: center
+	border-radius: 50%
+	cursor: pointer
+	position: absolute
+	top: 50%
+	background: #cdced2
+	border: 2px solid $white
+	z-index: 2
+	transition: $trs 
+	&--next
+		right: 30px
+	&--prev
+		left: 30px
+	&:hover
+		.icon
+			fill: $black
+	.icon
+		fill: $white
+		transition: $trs
