@@ -13,7 +13,11 @@ $(document).ready(function(){
 					breakpoint: 480,
 					settings: {
 						arrows: false,
-						dots:true
+						dots:true,
+						customPaging: function () {
+							return '<a class="slider__dot"></a>';
+						},
+						appendDots: '.slider__dots'
 					}
 				}
 			]

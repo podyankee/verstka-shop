@@ -82,3 +82,26 @@ p.slider__title
 	.icon
 		fill: $white
 		transition: $trs
+.slider__dots
+	bottom: 20px
+	left: 50%
+	transform: translateX(-50%)
+	z-index: 2
+	position: absolute
+.slider__dot
+	+square(10px)
+	border-radius: 50%
+	background-color: $white
+	display: block
+	cursor: pointer
+.slick-dots
+	display: flex
+	align-items: center
+	li
+		margin-right: 10px
+		&:last-child
+			margin-right: 0
+	li.slick-active
+		.slider__dot
+			background-color: $black
+
