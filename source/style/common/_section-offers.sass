@@ -1,0 +1,85 @@
+.offers
+	display: flex
+	justify-content: space-between
+	margin: 50px 0 25px
+	&__left, &__right
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+	&__element
+		position: relative
+		img
+			display: block
+			max-width: 100%
+	&__info
+		position: absolute
+		z-index: 1
+		left: 30px
+		a
+			+btn()
+		p
+			margin: 10px 0
+	&__category
+		+rem(13px)
+		line-height: 36px
+		letter-spacing: 0.65px
+		font-weight: 500
+		color: $gray
+	&__name
+		+rem(19px)
+		line-height: 24px
+		font-weight: 700
+		letter-spacing: 1.425px
+		color: $gray
+		text-transform: uppercase
+	&__new
+		position: absolute
+		right: 10px
+		top: 10px
+		+rem(11px)
+		line-height: 14px
+		padding: 5px 10px
+		background-color: $black
+		color: $white
+		text-transform: uppercase 
+		&::before
+			content: ''
+			border: 10px solid transparent
+			border-left: 10px solid $black
+			position: absolute
+			left: 0
+			bottom: -9px
+.offers__center
+	margin: 0 2.1%
+	.offers__info
+		top: 105px
+.offers__left
+	.offers__info
+		left: 0
+		bottom: 15px
+		width: 100%
+	.offers__two-get
+		+rem(22px)
+		line-height: 25px
+		text-transform: uppercase
+		letter-spacing: 1.65px
+		font-weight: 700
+		color: $gray
+		text-align: center
+.offers__right
+	.offers__info
+		top: 50px
+.offers__element--glasses
+	.offers__info
+		left: 0
+		bottom: 10px
+		width: 100%
+		top: auto
+	p
+		text-align: center
+		color: $gray
+		text-transform: uppercase
+		font-weight: 700
+		+rem(13px)
+		line-height: 25px
+		letter-spacing: 0.65px
