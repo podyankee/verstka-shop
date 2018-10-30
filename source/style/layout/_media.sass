@@ -3,6 +3,22 @@
 			+rem(70px)
 			line-height: 80px
 
+@media screen and (max-width: 1024px)
+	.offers
+		flex-wrap: wrap
+		&__right
+			flex-basis: 100%
+			display: block
+		&__element
+			max-width: 371px
+			margin: 20px auto
+		&__center
+			margin: 0
+
+@media screen and (max-width: 930px)
+	.banner__title
+		+rem(20px)
+
 @media screen and (max-width: 900px)
 	.slider__img
 		display: none
@@ -14,7 +30,23 @@
 			right: 5px
 		&--prev
 			left: 5px
-
+@media screen and (max-width: 810px)
+	.banner
+		background-position: 3% center
+@media screen and (max-width: 800px)
+	.offers
+		.offers__left
+			flex-basis: 100%
+			display: block
+			.offers__element
+				max-width: 277px
+				margin: 20px auto
+		.offers__center
+			flex-basis: 100%
+			display: block
+			.offers__element
+				max-width: 470px
+				margin: 0 auto
 
 +md-block
 	.top__left
@@ -38,7 +70,22 @@
 			+rem(16px)
 	.content
 		margin-top: 30px
-
+	.offers
+		margin: 25px 0
+		.offers__center
+			.offers__info
+				top: 50px
+		.offers__right
+			.offers__info
+				top: 15px
+	.offers__element--glasses
+		.offers__info
+			top: auto
+	.banner
+		background: #00b7d9
+		&__information
+			flex-basis: 100%
+			padding: 0 10px
 +xs-block
 	.top__menu
 		flex-basis: 100%
@@ -53,4 +100,8 @@
 		line-height: 40px
 	.slider__navigation
 		display: none
+	.banner
+		&__title
+			+rem(18px)
+	
 
