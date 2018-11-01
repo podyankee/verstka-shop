@@ -1,0 +1,33 @@
+.products
+	margin: 90px 0
+	&__title
+		+rem(26px)
+		line-height: 30px
+		letter-spacing: 2.6px
+		font-weight: 600
+		text-transform: uppercase
+		color: $gray
+		margin: 20px 0
+		text-align: center
+	&__discount
+		margin: 20px 0
+		text-align: center
+		+rem(14px)
+		line-height: 20px
+		letter-spacing: 5.6px
+	&__block
+		+row-flex
+	&__element
+		+col
+		+size(4)
+		position: relative
+	&__img
+		max-width: 100%
+		display: block
+		margin: 0 auto
+	&__button
+		$values: (fs: 13px, lh: 20px, ls: 0.78px, w: 175px, br:60px)
+		+btn($values...)
+		padding: 20px 0
+		+centered(x)
+		bottom: 20px

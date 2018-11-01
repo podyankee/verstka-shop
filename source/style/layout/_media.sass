@@ -86,6 +86,16 @@
 		&__information
 			flex-basis: 100%
 			padding: 0 10px
+	.products
+		margin: 25px 0
+@media screen and (max-width: 640px)
+	.products
+		&__element
+			+size(6)
+			margin: 0 auto
+			margin-bottom: 15px
+			&:last-child
+				margin-bottom: 0
 +xs-block
 	.top__menu
 		flex-basis: 100%
@@ -103,5 +113,8 @@
 	.banner
 		&__title
 			+rem(18px)
+	.products
+		&__element
+			+size(12)
 	
 
