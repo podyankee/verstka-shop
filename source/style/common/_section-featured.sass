@@ -1,0 +1,47 @@
+.featured
+	margin: 90px 0
+	&__title
+		+rem(26px)
+		line-height: 30px
+		letter-spacing: 2.6px
+		font-weight: 600
+		text-transform: uppercase
+		color: $gray
+		margin: 20px 0
+		text-align: center
+	&__block
+		+row-flex
+	&__element
+		+col
+		+size(3)
+		img
+			display: block
+			max-width: 100%
+			margin: 0 auto 20px
+	p
+		+rem(15px)
+		line-height: 17px
+		margin: 7px 0
+		a
+			+rem(15px)
+			line-height: 17px
+			color: $black
+			font-weight: 700
+			transition: +trs
+			text-transform: capitalize
+			&:hover
+				text-decoration: underline
+	&__brand
+		color: $brand
+	&__price
+		font-weight: 700
+		span
+			font-weight: 400
+			text-decoration: line-through
+			margin-right: 10px
+	&__button
+		$values: (fs: 12px, lh: 20px, ls: 0.6px, w: 175px, br:60px, bg: transparent, clr: $black)
+		+btn($values...)
+		border: 2px solid #d9c8aa
+		margin: 50px auto
+		padding: 18px 0
