@@ -92,8 +92,17 @@
 			padding: 0 10px
 	.banner--bottom
 		background: #d7dbd5
+		margin: 25px 0
 	.products
 		margin: 25px 0
+	.blogs
+		margin-top: 25px
+		&__item
+			+size(12)
+			img
+				width: 100%
+	.blog__info
+		width: calc(100% - 20px)
 @media screen and (max-width: 640px)
 	.products
 		&__element
