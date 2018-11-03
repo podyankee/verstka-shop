@@ -1,7 +1,6 @@
 .featured
 	margin: 90px 0
 	&__title
-		+rem(26px)
 		line-height: 30px
 		letter-spacing: 2.6px
 		font-weight: 600
@@ -10,13 +9,11 @@
 		margin: 20px 0
 		text-align: center
 	&__block
-		+row-flex
-	&__element
-		+col
-		+size(3)
+		position: relative
 		img
 			display: block
 			max-width: 100%
+			height: auto
 			margin: 0 auto 20px
 	p
 		+rem(15px)
@@ -45,3 +42,50 @@
 		border: 2px solid #d9c8aa
 		margin: 50px auto
 		padding: 18px 0
+p.featured__title
+	+rem(26px)
+
+.featured__icons
+	display: flex
+	flex-wrap:wrap
+	margin: 25px 0
+	a
+		+square(37px)
+		border: 1px solid $black
+		border-radius: 50%
+		margin-right: 20px
+		position: relative
+		&:last-child
+			margin-right: 0
+		.icon-arrow-right
+			fill: $white
+		&:first-of-type
+			background-color: $black
+	.icon
+		+absolute-center
+.featured__btn
+	+btn()
+.js-slider
+	max-width: 1920px
+.featured__navigation
+	+square(50px)
+	display: flex
+	align-items: center
+	justify-content: center
+	border-radius: 50%
+	cursor: pointer
+	+centered('y')
+	background: transparent
+	border: 2px solid #cdced2
+	z-index: 2
+	transition: $trs 
+	&--next
+		right: -50px
+	&--prev
+		left: -50px
+	&:hover
+		.icon
+			fill: $black
+	.icon
+		fill: #cdced2
+		transition: $trs
