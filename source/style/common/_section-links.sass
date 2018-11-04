@@ -1,0 +1,46 @@
+.links
+	background: #f8f8f8
+	padding: 240px 0 90px
+	&__items
+		+row-flex
+	&__item
+		+col
+		+size(2)
+		&--wide
+			+size(3)
+			//text-align: center
+	a
+		+rem(14px)
+		line-height: 30px
+		color: #727272
+		font-weight: 300
+		transition: $trs 
+		&:hover
+			text-decoration: underline
+			margin-left: auto
+	&__title
+		+rem(15px)
+		line-height: 20px
+		font-weight: 700
+		color: #575153
+		text-transform: uppercase
+		margin-bottom: 30px
+.links__item--wide
+	p
+		+rem(14px)
+		line-height: 20px
+		color: $black
+		font-weight: 300
+		margin: 10px 0
+		span
+			font-weight: 700
+		&:last-of-type
+			margin-top: 30px
+	.links__title
+		+rem(15px)
+		line-height: 20px
+		font-weight: 700
+		color: #575153
+		text-transform: uppercase
+		margin-bottom: 30px
+		margin-top: 0
